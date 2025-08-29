@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 19</title>
+</head>
+
+<body>
+    <h1>ATIVIDADE 19</h1>
+    <h3>Ao clicar em um botão, altere a cor de fundo de uma div aleatoriamente.</h3>
+
+    <div id="quad" style="width: 100px; height: 100px; background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;"></div>
+    <button id="botao" onclick="alteraEstilo()">CLIQUE AQUI</button>
+
+    <script>
+        function alteraEstilo() {
+            var cores = ["blue", "yellow", "red", "orange", "purple", "black", "white"]
+            numAleatorio = Math.floor(Math.random() * 6)
+            document.getElementById("quad").style.backgroundColor = cores[numAleatorio]
+        }
+    </script>
+</body>
+</html>
+

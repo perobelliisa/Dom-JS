@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+
+<body>
+    <h1>ATIVIDADE 01</h1>
+    <h3>Crie um botão que, ao ser clicado, exiba no console o texto de um parágrafo usando getElementById.</h3>
+
+    <p id="texto">Calopsitas são legais</p>
+    <button id="botao" onclick="mostrarTexto()">CLIQUE AQUI</button>
+
+    <script>
+
+        function mostrarTexto() {
+            var text = document.getElementById("texto")
+            console.log(texto)
+        }
+    </script>
+
+</body>
+</html>
+
+
+    <!--  DOM: DOCUMENT OBJECT MODEL (Transformar em um elemento) -->
+    <!--  Para manipular html no js, sempre colocar ID  -->
+    <!--  Informar p js que está dentro do documento (lembrar do .getElementById)  -->
+    <!--  Função() e {} para dizer oq a função faz// Objeto . // Array [] -->
+    <!--  Função recebe parâmetro. Parâmetro é o que ela vai puxar do html. String entre ""  -->
+    <!--  Colocamos . para acessar o objeto  -->
+    <!--  Colocamos = para receber a informação  -->
+    

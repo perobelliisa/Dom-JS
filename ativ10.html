@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+
+<body>
+    <h1>ATIVIDADE 10</h1>
+    <h3>Faça um botão que mostre o ID de um elemento ao clicar nele.</h3>
+
+
+    <p id="Roxo">Cor?</p>
+    <p id="id"></p>
+    <button id="botao" onclick="mostrarID()">CLIQUE AQUI</button>
+
+    <script>
+        function mostrarID() {
+            var id = document.getElementById("Roxo").id
+            document.getElementById("id").innerHTML = id
+        }
+    </script>
+</body>
+
+</html>

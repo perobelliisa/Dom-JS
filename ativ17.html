@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 17</title>
+</head>
+
+<body>
+    <h1>ATIVIDADE 17</h1>
+    <h3>Faça um botão que volte a exibir o parágrafo escondido.</h3>
+
+    <p id="voltou" style="display: none;">Volteiiii</p>
+    <button id="botao" onclick="resurgir()" style="background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;"  >CLIQUE AQUI</button>
+
+    <script>
+        function resurgir() {
+            document.getElementById("voltou").style.display = "block"
+        }
+    </script>
+</body>
+</html>

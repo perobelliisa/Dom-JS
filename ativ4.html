@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+</head>
+
+<body>
+    <h1>ATIVIDADE 04</h1>
+    <h3>Crie três parágrafos com IDs diferentes e, ao clicar em um botão, exiba o conteúdo de cada um no console.</h3>
+
+    <p id="texto">Calopsitas são legais</p>
+    <p id="texto1">Calopsitas são muito legais</p>
+    <p id="texto2">Calopsitas são extremamente legais</p>
+
+    <button id="botao" onclick="mostrarTexto()">CLIQUE AQUI</button>
+
+    <script>
+
+        function mostrarTexto() {
+            var text = document.getElementById("texto")
+            var text1 = document.getElementById("texto1")
+            var text2 = document.getElementById("texto2")
+            console.log(texto)
+            console.log(texto1)
+            console.log(texto2)
+        }
+    </script>
+
+</body>
+
+</html>

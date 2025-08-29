@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 07</title>
+</head>
+
+<body>
+    <h1>ATIVIDADE 07</h1>
+    <h3>Crie um botão que mostre a quantidade de caracteres dentro de um parágrafo (.innerText.length).</h3>
+
+    <p id="para">Amo Calopsitas</p>
+    <p id="contador" value=""></p>
+    <button id="botao" onclick="mostrarCara()">CLIQUE AQUI</button>
+
+    <script>
+        function mostrarCara() {
+            var cont = document.getElementById("para").innerText.length
+            document.getElementById("contador").innerHTML = cont
+
+        }
+    </script>
+</body>
+
+</html>

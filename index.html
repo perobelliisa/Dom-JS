@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+
+<body>
+    <!--  DOM: DOCUMENT OBJECT MODEL (Transformar em um elemento) -->
+    <!--  Para manipular html no js, sempre colocar ID  -->
+    <!--  Informar p js que está dentro do documento (lembrar do .getElementById)  -->
+    <!--  Função() e {} para dizer oq a função faz// Objeto . // Array [] -->
+    <!--  Função recebe parâmetro. Parâmetro é o que ela vai puxar do html. String entre ""  -->
+    <!--  Colocamos . para acessar o objeto  -->
+    <!--  Colocamos = para receber a informação  -->
+    <!--  Para reescrever/acessar/pegar o que está dentro de algo no HTML: innerHTML  -->
+    <!--  Variáveis armazenam dados -->
+    <!--  Mostrar na tela: Alert -->
+    <!--  Quando algo precisa de uma função para acontecer: Function  -->
+    <!--  Colocar o evento direto no HTML: ON  -->
+    <!--  Para pegar o Input: VALUE -->
+    <!--  Sempre que for manipular o elemento tem que pegar ele -->
+    <!--  NÃO ESQUECER AS "" -->
+    <!--  Onchange: Quando dá enter ele muda-->
+    <!--  Onkeyup: Quando você começa a digitar -->
+
+    <!--         function mudarCor() {
+            document.getElementById("texto").style.color = "red"
+            var text = document.getElementById("texto").innerHTML
+            alert(text)
+        }
+-->
+
+    <p id="texto">Calopsitas são legais</p>
+    <button id="botao" onclick="mudarCor()">CLIQUE AQUI</button>
+    <input onkeyup="digitarNovo()" type="text" id="input" value="">
+
+    <script>
+
+        function digitarNovo() {
+            var digito = document.getElementById("input").value
+            document.getElementById("texto").innerHTML = digito
+
+        }
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
