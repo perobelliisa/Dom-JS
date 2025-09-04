@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 50</title>
+</head>
+<body>
+    <h1>ATIVIDADE 50</h1>
+    <h3>Adivinhação: botão que gera um número aleatório e mostra em um p</h3>
+
+    <h2>Gerador de Número Aleatório</h2>
+    <button onclick="gerarNumero()" style="background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;">Gerar Número</button>
+    <p id="resultado"></p>
+
+    <script>
+        function gerarNumero() {
+            const numeroAleatorio = Math.floor(Math.random() * 100) + 1; 
+            document.getElementById("resultado").innerText = "Número gerado: " + numeroAleatorio;
+        }
+    </script>
+</body>
+</html>

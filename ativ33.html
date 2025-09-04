@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 33</title>
+</head>
+<body>
+    <h1>ATIVIDADE 33</h1>
+    <h3>Crie um botão que remova o último item da lista.</h3>
+
+        <ul id="lista">
+        <li>Peralta</li>
+        <li>Holt</li>
+        <li>Díaz</li>
+    </ul>
+    <button onclick="remove()">Remover Último Item</button>
+
+    <script>
+        function remove() {
+            var ul = document.getElementById("lista");
+            var ultimoItem = ul.lastElementChild; 
+            if (ultimoItem) {
+                ul.removeChild(ultimoItem);
+            } else {
+                alert("ja cabo pô!");
+            }
+        }
+    </script>
+</body>
+</html>

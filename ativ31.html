@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 31</title>
+</head>
+<body>
+    <h1>ATIVIDADE 31</h1>
+    <h3>Faça um botão que adiciona uma nova linha de texto em um p.</h3>
+
+     <p id="texto"></p>
+    <button onclick="adicionarLinha()">Adicionar Linha</button>
+
+    <script>
+        function adicionarLinha() {
+            var p = document.getElementById("texto");
+            p.innerHTML += "TEXTOOOOOOO<br>";
+        }
+    </script>
+</body>
+</html>

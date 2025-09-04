@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>ATIVIDADE 38</h1>
+    <h3> Crie uma calculadora simples de soma: dois inputs e um botão que exibe o resultado em p</h3>
+
+    <h1>Calculadora de Soma</h1>
+    <input type="number" id="numero1" placeholder="Digite o primeiro número">
+    <input type="number" id="numero2" placeholder="Digite o segundo número">
+    <button onclick="calcula()" style="background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;">Somar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcula() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            var soma = num1 + num2;
+            document.getElementById("resultado").innerText = "Resultado: " + soma;
+        }
+    </script>
+</body>
+</html>

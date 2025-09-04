@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+</head>
+<body>
+
+    <h1>ATIVIDADE 44</h1>
+    <h3>Relógio: botão que mostra a hora atual dentro de um h2.</h3>
+
+    <h2 id="hora">Clique no botão para ver a hora atual</h2>
+    <button onclick="mostrarHora()">Mostrar Hora</button>
+
+    <script>
+        function mostrarHora() {
+            const agora = new Date();
+            const horaAtual = agora.toLocaleTimeString();
+            document.getElementById("hora").innerText = "Hora atual: " + horaAtual;
+        }
+    </script>
+</body>
+</html>

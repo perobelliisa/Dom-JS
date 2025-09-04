@@ -9,18 +9,17 @@
 
 <body>
     <h1>ATIVIDADE 24</h1>
-    <h3>Crie uma div que mude de cor quando o mouse passa por cima (onmouseover).</h3>
+    <h3>Faça uma div voltar à cor original quando o mouse sai dela (onmouseout).</h3>
 
-    <div id="quad"
-        style="width: 100px; height: 100px; background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;"
-        onmouseover="mudar()" onmouseout="voltar()"></div>
+    <div div id="div" style="width: 200px; height: 200px; background-color: rgb(255, 0, 123);" onmouseover="mostra()"
+     onmouseout="volta()"></div>
 
-    <script>
-        function mudar() {
-            document.getElementById("quad").style.backgroundColor = "purple"
+     <script>
+        function mostra() {
+            document.getElementById("div").style.backgroundColor="purple"
         }
-        function voltar() {
-            document.getElementById("quad").style.backgroundColor = "pink"
+        function volta() {
+            document.getElementById("div").style.backgroundColor="pink"
         }
     </script>
 </body>

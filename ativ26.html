@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 26</title>
+</head>
+<body> 
+    <h1>ATIVIDADE 26</h1>
+    <h3>Crie um campo de texto que, ao ganhar foco (onfocus), pinte o fundo de amarelo.</h3>
+
+
+    <input type="text" id="input" onfocus="mostra()" onblur="vorta()">
+
+    <script>
+        function mostra() {
+            document.getElementById("input").style.backgroundColor="yellow"
+        }
+        function vorta() {
+            document.getElementById("input").style.backgroundColor="white"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 48</title>
+</head>
+<body>
+
+    <h1>ATIVIDADE 48</h1>
+    <h3>To-do list: botão que adiciona uma tarefa em uma lista ul</h3>
+
+    <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+    <ul id="lista"></ul>
+
+    <script>
+        function adicionarTarefa() {
+            var tarefa = document.getElementById("tarefa").value
+            document.getElementById("lista").innerHTML += "<li>" + tarefa + "</li>"
+        }
+    </script>
+</body>
+</html>

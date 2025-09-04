@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 53</title>
+</head>
+<body>
+
+    <h1>ATIVIDADE 53</h1>
+    <h3>Caixa de alerta personalizada: botão que pega o texto de um input e exibe em alert().</h3>
+
+    <input type="text" id="texto" placeholder="Digite algo">
+    <button onclick="mostrarAlerta()" style="background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;" >Exibir Alerta</button>
+
+    <script>
+        function mostrarAlerta() {
+            const texto = document.getElementById("texto").value;
+            if (texto.trim() !== "") {
+                alert("Você digitou: " + texto);
+            } else {
+                alert("Digite algo");
+            }
+        }
+    </script>
+</body>
+</html>

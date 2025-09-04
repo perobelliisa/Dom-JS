@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>ATIVIDADE 40</h1>
+    <h3>Faça um botão que troque o texto de todos os parágrafos para "Alterado!".</h3>
+
+    <p>Parágrafo</p>
+    <p>Parágrafoo</p>
+    <p>Parágrafooo</p>
+    <button onclick="alterar()" style="background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;" >Alterar</button>
+
+    <script>
+        function alterar() {
+            var paragrafos = document.querySelectorAll("p");
+            paragrafos.forEach(function(p) {
+                p.innerText = "Alterado!";
+            });
+        }
+    </script>
+</body>
+</html>

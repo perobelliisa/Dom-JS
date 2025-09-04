@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 52</title>
+    <style>
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            height: 200px;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ATIVIDADE 52</h1>
+    <h3>Carrossel simples: botão “Próximo” que troca uma imagem para a próxima.</h3>
+
+    <img id="imagem" src="img/meme7.jpg" alt="">
+    <button onclick="proximaImagem()" style="background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;" >Próximo</button>
+
+    <script>
+        const imagens = [
+            "img/meme3.jpg",
+            "img/meme4.jpg",
+            "img/meme5.jpg",
+            "img/meme6.jpg"
+        ];
+        let indiceAtual = 0;
+
+        function proximaImagem() {
+            indiceAtual = (indiceAtual + 1) % imagens.length;
+            document.getElementById("imagem").src = imagens[indiceAtual];
+        }
+    </script>
+</body>
+</html>

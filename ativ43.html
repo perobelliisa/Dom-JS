@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar/Ocultar</title>
+</head>
+<body>
+
+    <h1>ATIVIDADE 43</h1>
+    <h3>Mostrar/Ocultar: botão que alterna entre mostrar e esconder um parágrafo.</h3>
+
+    <p id="paragrafo">Vai e Volta</p>
+    <button onclick="p()">Mostrar ou Ocultar</button>
+
+    <script>
+        function p() {
+            const p = document.getElementById("paragrafo");
+            if (p.style.display === "none") {
+                p.style.display = "block";
+            } else {
+                p.style.display = "none"; 
+            }
+        }
+    </script>
+</body>
+</html>

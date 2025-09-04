@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 29</title>
+</head>
+<body> 
+    <h1>ATIVIDADE 29</h1>
+    <h3>Crie uma imagem que troque para outra quando o mouse passa em cima.</h3>
+
+
+    <img id="img" src="https://p2.trrsf.com/image/fget/cf/1548/0/images.terra.com/2022/07/15/1022644453-1657836252493.jpg" alt="monki" style="width: 300px;" onmouseover="mostra()" onmouseout="vorta()">
+    <script>
+        function mostra() {
+            document.getElementById("img").src="https://images2.memedroid.com/images/UPLOADED41/5313f8d34ee82.jpeg"
+            document.getElementById("img").style.width="300px"
+        }
+        function vorta() {
+            document.getElementById("img").src="https://p2.trrsf.com/image/fget/cf/1548/0/images.terra.com/2022/07/15/1022644453-1657836252493.jpg"
+        }
+    </script>
+</body>
+</html>

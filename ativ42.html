@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar Fundo</title>
+</head>
+
+<body>
+
+    <h1>ATIVIDADE 41</h1>
+    <h3>Mudar fundo: um botão que muda o fundo da página para uma cor aleatória.</h3>
+
+    <button onclick="mudarFundo()"
+        style="background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;">Mudar
+        Cor</button>
+
+    <script>
+        function mudarFundo() {
+            var cores = ["blue", "yellow", "red", "orange", "purple", "black", "white", "pink"]
+            numAleatorio = Math.floor(Math.random() * 7)
+            document.body.style.backgroundColor = cores[numAleatorio]
+        }
+    </script>
+</body>
+
+</html>

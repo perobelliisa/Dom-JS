@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atvidade 45</title>
+</head>
+<body>
+    <h1>ATIVIDADE 45</h1>
+    <h3>Like: botão que ao clicar soma +1 curtida em um contador.</h3>
+
+    <h2>Curtidas: <span id="contador">0</span></h2>
+    <button onclick="adicionarCurtida()"><img src="img/like.png" alt="like"></button>
+
+    <script>
+        let curtidas = 0;
+
+        function adicionarCurtida() {
+            curtidas++;
+            document.getElementById("contador").innerText = curtidas;
+        }
+    </script>
+</body>
+</html>

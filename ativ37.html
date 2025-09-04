@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ATIVIDADE 37</h1>
+    <h3> Faça um botão que altere o texto de um h1 para o que foi digitado em um input</h3>
+
+    <h2 id="titulo">Texto original</h2>
+    <input type="text" id="entrada" placeholder="Digite algo">
+    <button onclick="altera()"  style="background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;">Alterar Texto</button>
+
+    <script>
+        function altera() {
+            var input = document.getElementById("entrada").value;
+            document.getElementById("titulo").innerText = input;
+        }
+    </script>
+</body>
+</html>

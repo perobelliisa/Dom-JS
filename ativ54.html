@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 54</title>
+</head>
+<body>
+
+    <h1>ATIVIDADE 54</h1>
+    <h3>Calculadora de dobro: botão que pega o número digitado e mostra o dobro em p.</h3>
+
+    <input type="number" id="numero1" placeholder="Digite o primeiro número">
+    <input type="number" id="numero2" placeholder="Digite o segundo número">
+    <button onclick="calcula()" style="background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;">x</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcula() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            var x = num1 * num2;
+            document.getElementById("resultado").innerText = "Resultado: " + x;
+        }
+    </script>
+</body>
+</html>

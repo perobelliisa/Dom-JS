@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 46</title>
+</head>
+<body>
+    <h1>ATIVIDADE 46</h1>
+    <h3>Caixa de texto: ao clicar em um botão, o texto digitado aparece abaixo em uma p.</h3>
+
+    <input type="text" id="texto" placeholder="Digite algo">
+    <button onclick="mostrar()" style="background-color: pink; font-size: 20px; border-color: palevioletred; border-radius: 10px; color: darkmagenta;">Exibir Texto</button>
+    <p id="resultado"></p>
+
+    <script>
+        function mostrar() {
+            const texto = document.getElementById("texto").value;
+            document.getElementById("resultado").innerText = texto;
+        }
+    </script>
+</body>
+</html>
